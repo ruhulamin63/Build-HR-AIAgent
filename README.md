@@ -10,6 +10,7 @@ git clone https://github.com/ruhulamin63/Build-HR-AIAgent.git
 cp .env.example .env
 ```
 
+### Your .env file added this code
 ```bash
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
@@ -17,6 +18,9 @@ DB_PORT=3306
 DB_DATABASE=your-db-name
 DB_USERNAME=root
 DB_PASSWORD=
+
+GEMINI_API_KEY=your-gemini-api-key
+GEMINI_MODEL=your-gemini-model
 ```
 
 ```bash
