@@ -28,8 +28,7 @@ composer install
 ```
 
 ```bash
-php ar
-tisan migrate
+php artisan migrate
 ```
 ```bash
 php artisan serve

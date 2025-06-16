@@ -1,16 +1,17 @@
 <?php
-
-namespace App\Http\Controllers;
+// app/Agents/ChatAgent.php
+namespace App\Neuron\Agent;
 
 use NeuronAI\Agent;
-use NeuronAI\Tools\Tool;
-use NeuronAI\SystemPrompt;
-use NeuronAI\Tools\ToolProperty;
-use NeuronAI\Providers\Gemini\Gemini;
 use NeuronAI\Providers\AIProviderInterface;
+use NeuronAI\Providers\Gemini\Gemini;
+use NeuronAI\SystemPrompt;
+use NeuronAI\Tools\Tool;
+use NeuronAI\Tools\ToolProperty;
 
-class MyAgentController extends Agent
+class HRAgent extends Agent
 {
+
     protected function provider(): AIProviderInterface
     {
         return new Gemini(
@@ -57,9 +58,13 @@ class MyAgentController extends Agent
                 )
             )->setCallable(function (string $user_input) {
                 // Process the user input and respond accordingly
-                // return $this->processUserInput($user_input);
+                return $this->processUserInput($user_input);
             })
         ];
     }
+    
+    private function processUserInput(string $user_input): string
+    {
+        return "Processed input: " . $user_input;
+    }
 }
-

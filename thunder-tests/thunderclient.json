@@ -8,7 +8,7 @@
     "method": "POST",
     "sortNum": 10000,
     "created": "2025-06-04T05:16:41.540Z",
-    "modified": "2025-06-04T05:20:06.135Z",
+    "modified": "2025-06-16T12:49:49.066Z",
     "headers": [
       {
         "name": "Accept",
@@ -18,28 +18,9 @@
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n  \"message\": \"আমি আগামীকাল ছুটি নিতে চাই।\"\n}",
+      "raw": "{\n  \"message\": \"I need salary count in our employee?\"\n}",
       "form": []
     },
-    "tests": []
-  },
-  {
-    "_id": "f717752e-d3a1-4580-8bff-fb22e3ae7315",
-    "colId": "225b8da9-63bf-4dc7-ae76-90663a425a88",
-    "containerId": "",
-    "name": "debug-agent",
-    "url": "{{baseUrl}}/debug-agent",
-    "method": "GET",
-    "sortNum": 20000,
-    "created": "2025-06-04T07:29:11.026Z",
-    "modified": "2025-06-04T07:29:34.187Z",
-    "headers": [
-      {
-        "name": "Accept",
-        "value": "application/json"
-      }
-    ],
-    "params": [],
     "tests": []
   }
 ]
